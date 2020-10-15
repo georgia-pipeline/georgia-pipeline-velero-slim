@@ -4,7 +4,7 @@ MAINTAINER  Charles Sibbald <charles@georgiapipeline.io>
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl  \
- && apk add --update gettext tar gzip
+ && apk add --update gettext tar gzip sed
 
 ENV K8S_VERSION="v1.19.0"
 ENV HELM_VERSION="v3.3.4"
